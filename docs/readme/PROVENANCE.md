@@ -1,0 +1,1 @@
+The four existing email-domain illustrations are reused unchanged from the local AskMyDocs Microsoft Mail package. They share the canonical CRT monowheel mascot and illustrate complete messages, container selection, resumable acquisition and host triage. No generative API or paid AI call was made by this task. The project mark is the bundled original SVG envelope icon.
