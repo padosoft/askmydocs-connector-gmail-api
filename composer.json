@@ -1,0 +1,62 @@
+{
+    "name": "padosoft/askmydocs-connector-gmail",
+    "description": "Read-only Gmail API acquisition for AskMyDocs with resumable history and email v1 triage.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "require": {
+        "php": "^8.3",
+        "ext-dom": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "firebase/php-jwt": "^7.0",
+        "illuminate/contracts": "^12.0|^13.0",
+        "illuminate/filesystem": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0",
+        "league/html-to-markdown": "^5.1",
+        "padosoft/askmydocs-connector-base": "^1.6"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Padosoft\\AskMyDocsConnectorGmail\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Padosoft\\AskMyDocsConnectorGmail\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Padosoft\\AskMyDocsConnectorGmail\\GmailServiceProvider"
+            ]
+        },
+        "askmydocs": {
+            "connectors": [
+                "Padosoft\\AskMyDocsConnectorGmail\\GmailConnector"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=512M"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/padosoft/askmydocs-connector-base"
+        }
+    ]
+}

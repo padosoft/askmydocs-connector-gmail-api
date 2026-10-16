@@ -1,0 +1,51 @@
+{
+  "id": "FixtureCaseID",
+  "snippet": "Incomplete preview should be ignored",
+  "internalDate": "1791936000000",
+  "labelIds": [
+    "INBOX"
+  ],
+  "payload": {
+    "mimeType": "multipart/related",
+    "headers": [
+      {
+        "name": "Subject",
+        "value": "Synthetic multipart fixture"
+      }
+    ],
+    "parts": [
+      {
+        "mimeType": "multipart/alternative",
+        "parts": [
+          {
+            "mimeType": "text/plain",
+            "body": {
+              "data": "Q29tcGxldGUgcGxhaW4gYm9keQ"
+            }
+          },
+          {
+            "mimeType": "text/html",
+            "body": {
+              "data": "PHA-Q29tcGxldGUgSFRNTCBib2R5PC9wPg"
+            }
+          }
+        ]
+      },
+      {
+        "partId": "image",
+        "mimeType": "image/png",
+        "filename": "inline.png",
+        "headers": [
+          {
+            "name": "Content-ID",
+            "value": "<synthetic>"
+          }
+        ],
+        "body": {
+          "size": 1,
+          "data": "YQ"
+        }
+      }
+    ]
+  }
+}
